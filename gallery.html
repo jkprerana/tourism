@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="Montserrat.css">
+
+
+<style>
+@import url(assets/css/font-awesome.min.css);
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body style="background-image:url(images/back.jpg)">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+    <a href="culture.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Culture</a>
+    <a href="ptv.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Places To Visit</a>
+    <a href="accomodation.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Accomodation</a>
+    <a href="adventure.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Adventures</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+  </div>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>Colourful Ladakh</b></h1>
+  <p><b>Seen anything more beautiful than these?</b></p>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+
+  <div class="w3-third">
+    <img src="images/apple.jpg" style="width:100%">
+    <img src="images/scene.jpg" style="width:100%">
+    <img src="images/shanti.jpg" style="width:100%">
+    <img src="images/camp.jpg" style="width:100%">
+    <img src="images/chinki.jpg" style="width:100%">
+    <img src="images/ladakh-trekking.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/ladakh-winter.jpg" style="width:100%">
+    <img src="images/cul.jpg" style="width:100%">
+    <img src="images/road.jpg" style="width:100%">
+    <img src="images/lake.jpg" style="width:100%">
+    <img src="images/swastik.jpg" style="width:100%">
+    <img src="images/trip.jpg" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="images/images.jpg" style="width:100%">
+    <img src="images/camel.jpg" style="width:100%">
+    <img src="images/shopping.jpg" style="width:100%">
+    <img src="images/cold desert.jpg" style="width:100%">
+    <img src="images/Ladakh(1).jpg" style="width:100%">
+    <img src="images/animals.jpg" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+</footer>
+
+<script>
+// Toggle grid padding
+function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+}
+
+// Open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
